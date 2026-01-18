@@ -1,0 +1,36 @@
+#include <stdio.h>
+void FindOccurrences(int *Arr,int size, int target);
+ int main(){
+int n,target ;
+printf("please,enter number of elements");
+scanf("%d",&n);
+int Arr[n];
+for(int i=0;i<n;i++){
+    printf("enter the element\n");
+    scanf("%d",&Arr[i]);
+}
+  printf("please,enter the target number ");
+  scanf("%d",&target);
+ FindOccurrences(Arr,n,target);
+}
+void FindOccurrences(int *Arr,int size, int target){
+   // int start=0,end=size-1,mid,index;
+   /* while(start<=end){
+    mid =(start+end)/2;
+    if(target==Arr[mid]){
+        index = mid;
+        printf("%d",index);
+    break;
+    }
+    else if (target>=mid){
+        start = mid+1;
+    }
+    else{
+        end = mid-1;
+    }
+    }*/
+   for(int i=0;i<size;i++) {
+      if (target==Arr[i]){
+          printf("%d\n",i); }
+ }
+}
