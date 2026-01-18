@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+float FindAverage(int*Arr,int size);
+
+int main(){
+  int n;
+  printf("please,enter number of elements");
+  scanf("%d",&n);
+  int Arr[n];
+  for(int i=0;i<n;i++){
+  printf("please,Enter element");
+  scanf("%d",&Arr[i]);  
+  }
+
+printf(" the avarage is %f",FindAverage(Arr, n));
+}
+
+float FindAverage(int*Arr,int size){
+int sum =0;
+ for(int i=0;i<size;i++)
+  sum +=Arr[i];
+  float avar=sum/size;
+  return avar;
+}
