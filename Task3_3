@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+  int Arr[10],num_positive=0,num_negative=0,num_zero=0;
+  for(int i=0;i<10;i++){
+  printf("please,Enter element");
+  scanf("%d",&Arr[i]);  
+  }
+   for(int i=0;i<10;i++)
+if (Arr[i]>0){
+    num_positive++;
+}
+else if(Arr[i]<0){
+ num_negative++;
+}
+else{
+    num_zero++;
+}
+printf("the number of positive numbers is%d\n", num_positive);
+printf("the number of negative numbers is%d\n", num_negative);
+printf("the number of zeroes is%d", num_zero);
+}
